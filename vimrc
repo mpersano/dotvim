@@ -48,9 +48,10 @@ map <F12> :NERDTreeToggle<CR>
 map <F3> :NERDTreeFind<CR>
 
 "
-" taglist
+" tagbar
 "
-map <F11> :TlistToggle<CR>
+map <F8> :TagbarToggle<CR>
+let g:tagbar_left=1
 
 "
 " clang_complete
