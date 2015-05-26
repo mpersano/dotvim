@@ -4,6 +4,8 @@ set smartindent
 set background=dark
 set ruler
 
+set matchpairs+=<:>
+
 filetype plugin indent on
 
 runtime ftplugin/man.vim
