@@ -45,6 +45,7 @@ call pathogen#infect()
 "
 let g:NERDTreeWinPos="right"
 map <F12> :NERDTreeToggle<CR>
+map <F3> :NERDTreeFind<CR>
 
 "
 " taglist
