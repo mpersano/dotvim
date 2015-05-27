@@ -57,6 +57,6 @@ let g:tagbar_left=1
 " clang_complete
 "
 let g:clang_use_library=1
-let g:clang_library_path="/usr/lib/i386-linux-gnu/libclang.so.1"
+let g:clang_close_preview=1
 let g:clang_user_options='-std=c++11'
 let g:clang_complete_auto=0
