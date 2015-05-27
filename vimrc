@@ -6,7 +6,9 @@ set ruler
 
 set matchpairs+=<:>
 
-filetype plugin on
+let c_space_errors=1
+
+filetype plugin indent on
 
 runtime ftplugin/man.vim
 
