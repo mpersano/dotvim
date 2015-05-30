@@ -3,6 +3,7 @@ syntax on
 set smartindent
 set background=dark
 set ruler
+set noerrorbells visualbell t_vb=
 
 set matchpairs+=<:>
 
