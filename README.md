@@ -6,6 +6,8 @@
     cd .vim
     git submodule update --init --recursive
 
+then, to generate documentation, run `:Helptags` from vim.
+
 ## tips
 
 vim on debian isn't compiled with python support. you can check with:
