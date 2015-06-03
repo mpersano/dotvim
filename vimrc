@@ -47,6 +47,7 @@ call pathogen#infect()
 " NERDTree
 "
 let g:NERDTreeWinPos="right"
+let g:NERDTreeDirArrows=0 " remove this for fancy arrows (needs utf-8 locale)
 map <F12> :NERDTreeToggle<CR>
 map <F3> :NERDTreeFind<CR>
 

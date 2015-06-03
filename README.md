@@ -10,6 +10,11 @@ then, to generate documentation, run `:Helptags` from vim.
 
 ## tips
 
+adding a new plugin:
+
+    cd ~/.vim
+    git submodule add http://github.com/foo/awesome-plugin.git bundle/awesome-plugin
+
 vim on debian isn't compiled with python support. you can check with:
 
     vim --version | grep +python
