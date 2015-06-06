@@ -3,8 +3,11 @@ syntax on
 set smartindent
 set background=dark
 set ruler
+set showcmd
+set hlsearch
+set incsearch
+set number
 set noerrorbells visualbell t_vb=
-
 set matchpairs+=<:>
 
 let c_space_errors=1
