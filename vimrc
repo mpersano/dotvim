@@ -9,6 +9,7 @@ set incsearch
 set number
 set noerrorbells visualbell t_vb=
 set matchpairs+=<:>
+set complete-=i " scanning included files when autocompleting take *ages* with boost
 
 let c_space_errors=1
 
@@ -67,3 +68,16 @@ let g:clang_use_library=1
 let g:clang_close_preview=1
 let g:clang_user_options='-std=c++11'
 let g:clang_complete_auto=0
+
+"
+" syntastic
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+let g:syntastic_cpp_compiler_options='-std=c++11'
