@@ -38,7 +38,7 @@ autocmd FileType c,cpp call SetIndentStyle()
 "
 set tags=tags;
 autocmd FileType cpp execute 'set tags+='.substitute(globpath('~/.vim/tags', '*'), '\n', ',', 'g')
-map <leader>rt :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <leader>rt :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q -IQ_DECL_OVERRIDE,Q_DECL_NOTHROW,Q_DECL_NOEXCEPT,Q_DECL_FINAL .<CR>
 
 "
 " pathogen
