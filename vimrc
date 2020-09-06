@@ -10,28 +10,13 @@ set number
 set noerrorbells visualbell t_vb=
 set matchpairs+=<:>
 set complete-=i " scanning included files when autocompleting take *ages* with boost
+set ts=4 sts=4 sw=4 et
 
 let c_space_errors=1
 
 filetype plugin indent on
 
 runtime ftplugin/man.vim
-
-"
-" tabs or spaces?
-"
-function! SetIndentStyle()
-	let tabs = len(filter(getline('1', '$'), 'v:val =~ "^\t"'))
-	let spaces = len(filter(getline('1', '$'), 'v:val =~ "^ "'))
-	if spaces > tabs
-		set ts=4 sts=4 sw=4 et
-	else
-		set ts=8 sts=0 sw=8 noet
-	endif
-endfunction
-
-autocmd FileType * set ts=8 sts=0 sw=8 noet
-autocmd FileType c,cpp call SetIndentStyle()
 
 "
 " tags
@@ -65,6 +50,7 @@ let g:syntastic_auto_loc_list=1
 " let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_cpp_compiler_options='-std=c++17'
+" let g:syntastic_debug=1
 
 "
 " airline
