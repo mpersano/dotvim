@@ -23,7 +23,6 @@ runtime ftplugin/man.vim
 "
 set tags=tags;
 autocmd FileType cpp execute 'set tags+='.substitute(globpath('~/.vim/tags', '*'), '\n', ',', 'g')
-map <leader>rt :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q -IQ_DECL_OVERRIDE,Q_DECL_NOTHROW,Q_DECL_NOEXCEPT,Q_DECL_FINAL .<CR>
 
 "
 " pathogen
@@ -37,20 +36,6 @@ call pathogen#infect()
 let g:NERDTreeWinPos="right"
 " let g:NERDTreeDirArrows=0 " remove this for fancy arrows (needs utf-8 locale)
 map <leader>nt :NERDTreeFind<CR>
-
-"
-" syntastic
-"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-" let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-let g:syntastic_cpp_compiler_options='-std=c++17'
-" let g:syntastic_debug=1
 
 "
 " airline
